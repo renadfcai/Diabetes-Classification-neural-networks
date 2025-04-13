@@ -22,4 +22,6 @@ To provide an interactive user experience, a web application was developed using
 
 ## Conclusion
 
-This project highlights the significance of classification models in diabetes prediction.
+This project highlights the significance of classification models in diabetes prediction. 
+
+### Updates
