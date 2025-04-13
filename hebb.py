@@ -19,3 +19,4 @@ class HebbianDiabetesClassifier:
     def predict(self, X):
         prediction = np.dot(X, self.weights) + self.bias
         return np.sign(prediction)
+# This is what we do
