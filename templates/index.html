@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Diabetes</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../static/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+	</head>
+
+	<body id="main_body">
+		<div class="container-fluid pb-5 m-0 ps-0 pe-0 sticky-top">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 pb-0">
+				<div class="container-fluid m-0 pt-0" id="nav_color">
+					<a class="navbar-brand" href="#">
+						<img src="../static/img/icon.png" width="30px" height="30px" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-center ms-3 navText"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									class="nav-link active ms-6 me-5 text-white"
+									aria-current="page"
+									href="#"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active ms-6 me-5 text-white" href="#header_3"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active ms-6 me-5 text-white" href="#header_4"
+									>Model</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active ms-6 me-5 text-white" href="#form_style"
+									>Classification</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container-fluid justify-content-center">
+			<div class="jumbotron text-capitalize m-4 p-5 pt-2" id="main_header">
+				<div class="row align-items-center">
+					<div class="col-md-8">
+						<h1>Diabetes examination</h1>
+						<p>
+							This website utilizes classification techniques to determine whether the
+							patient has diabetes or not
+						</p>
+						<p>
+							<a class="btn btn-lg mt-3 submit_btn" href="#form_style" role="button"
+								>classification</a
+							>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<object
+							type="image/svg+xml"
+							width="300px"
+							height="300px"
+							data="../static/img/1.svg"
+						></object>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr />
+		<div class="container-fluid ps-5 align-content-center" id="header_3">
+			<div class="container-fluid text-center pt-5">
+				<h1 id="risks_header">About Diabetes</h1>
+				<div class="row align-items-center justify-content-center mt-4">
+					<div class="col-3">
+						<object
+							type="image/svg+xml"
+							width="300px"
+							height="300px"
+							data="../static/img/2.svg"
+						></object>
+					</div>
+
+					<div class="col-9 fs-4 mt-5 text-start align-items-end par_all">
+						Diabetes is a chronic metabolic disorder characterized by high blood sugar
+						levels, resulting from insufficient insulin production or ineffective
+						insulin utilization. It is categorized into type 1, which appears in
+						childhood and requires lifelong insulin treatment, and type 2, associated
+						with adulthood and often linked to obesity and lifestyle factors. With a
+						global impact, diabetes can lead to various complications if not properly
+						managed.
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid mb-5 pb-5 pe-5">
+				<div class="container-fluid text-center">
+					<div class="row align-items-center justify-content-center mb-5">
+						<div class="col-9 fs-4 mt-5 text-start align-items-start par_all">
+							The effects of diabetes can be wide-ranging and impactful. Prolonged
+							high blood sugar levels can damage blood vessels and nerves, leading to
+							complications such as cardiovascular issues, kidney damage, eye
+							problems, nerve damage, and an increased risk of infections and slow
+							wound healing. Diabetes can also significantly affect daily life,
+							causing fatigue, excessive thirst, frequent urination, unexplained
+							weight loss, and other symptoms that hinder overall well-being.
+						</div>
+
+						<div class="col-3">
+							<object
+								type="image/svg+xml"
+								width="300px"
+								height="300px"
+								data="../static/img/3.svg"
+							></object>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center justify-content-center mb-5 mt-5">
+					<div class="col-12 align-content-center text-center ms-0">
+						<object
+							type="image/svg+xml"
+							width="300px"
+							height="300px"
+							data="../static/img/4.svg"
+						></object>
+					</div>
+					<div class="col-12 align-content-start mt-5 fs-4 text-start par_all">
+						Early diagnosis of diabetes is crucial for effective management and
+						prevention of complications. In recent years, advancements in technology and
+						machine learning have facilitated the development of classification models
+						that can aid in predicting the likelihood of an individual having diabetes.
+						These models utilize various features such as age, body mass index (BMI),
+						glucose levels, and other relevant health indicators to assess the risk of
+						diabetes. This can be done using classification models like KNN, SVM and
+						others.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- Cards -->
+
+		<div class="container-fluid mb-5 pb-5 border-opacity-50 border-black" id="header_4">
+			<div class="container pt-5">
+				<h1 class="cards_header">Our Model</h1>
+				<div class="card container mt-5 mb-5">
+					<img
+						src="../static/img/eda1.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">Glucose and Weight Comparison</h5>
+						<p class="card-text">
+							Diabetic patients have higher glucose rate and weight compared to
+							non-diabetic individuals.
+						</p>
+					</div>
+				</div>
+
+				<div class="card container mt-5">
+					<img
+						src="../static/img/eda2.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">Age and Diabetes</h5>
+						<p class="card-text">
+							While age is not directly related to diabetes, older individuals with
+							higher glucose levels are more prone to developing diabetes.
+							Additionally, males between the ages of 40 and 80 tend to have higher
+							blood glucose levels than females.
+						</p>
+					</div>
+				</div>
+
+				<div class="card container mt-5">
+					<img
+						src="../static/img/eda3.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">Blood Pressure and Diabetes</h5>
+						<p class="card-text">
+							Blood pressure is not directly related to diabetes. Interestingly,
+							non-diabetic patients often exhibit higher blood pressure levels.
+						</p>
+					</div>
+				</div>
+				<div class="card container mt-5">
+					<img
+						src="../static/img/eda4.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">HDL-Cholesterol and Diabetes</h5>
+						<p class="card-text">
+							Diabetic patients tend to have lower levels of HDL-cholesterol.
+						</p>
+					</div>
+				</div>
+				<div class="card container mt-5">
+					<img
+						src="../static/img/eda5.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">Gender and Diabetes</h5>
+						<p class="card-text">
+							Females have a higher prevalence of diabetes compared to males.
+						</p>
+					</div>
+				</div>
+				<div class="card container mt-5">
+					<img
+						src="../static/img/eda6.png "
+						class="card-img-top border-5 fw-bold"
+						width="100"
+						height="500"
+						alt="3"
+					/>
+					<div class="card-body border-5">
+						<h5 class="card-title fw-bold">Cholesterol and Diabetes</h5>
+						<p class="card-text">
+							Patients with diabetes commonly have higher cholesterol levels.
+						</p>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">Hebbian Model</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							Our website introduces Hebbian learning, a classic yet powerful approach
+							to diabetes classification. Despite its simplicity and age, our custom
+							implementation showcases the enduring effectiveness of Hebbian learning
+							principles. With an accuracy of <b>92.3%</b>, Hebbian learning offers a
+							foundational understanding of neural network behavior and adaptation. By
+							reinforcing connections between neurons based on correlated activity,
+							Hebbian learning fosters the emergence of patterns in diabetes data.
+							While its accuracy may be lower compared to modern techniques, Hebbian
+							learning provides valuable insights into the fundamentals of neural
+							computation. Through our implementation, users gain a deeper
+							appreciation for the historical significance and enduring relevance of
+							Hebbian learning in the field of machine learning and neuroscience.
+						</p>
+						<div style="text-align: center">
+							<img
+								src="../static/img/hebb_cm.png"
+								class="border-5 fw-bold"
+								width="500"
+								alt="3"
+							/>
+						</div>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">MaxNet Model</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							MaxNet, our custom implementation featuring binary activation, offers a
+							novel approach to diabetes classification with an accuracy of
+							<b>89.1%</b>. Designed to capitalize on binary activation functions,
+							MaxNet efficiently distinguishes between diabetic and non-diabetic
+							cases. By leveraging the simplicity and computational efficiency of
+							binary activation, MaxNet excels in capturing essential features from
+							diabetes data while mitigating computational complexity. Our
+							implementation showcases the versatility and effectiveness of binary
+							activation in neural network architectures, paving the way for
+							innovative solutions in healthcare analytics. With MaxNet, we empower
+							users with accurate and streamlined diabetes classification,
+							facilitating proactive management and personalized interventions for
+							improved patient outcomes.
+						</p>
+						<div style="text-align: center">
+							<img
+								src="../static/img/maxnet_cm.png"
+								class="border-5 fw-bold"
+								width="500"
+								alt="3"
+							/>
+						</div>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">Perceptron Model</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							Our implementation harnesses the Perceptron model, a foundational
+							algorithm within the realm of machine learning, available through the
+							sklearn library. Renowned for its simplicity and efficiency, the
+							Perceptron model operates as a binary classifier, making predictions
+							based on a set of input features. By iteratively adjusting weights to
+							minimize errors, the model effectively learns to distinguish between
+							diabetic and non-diabetic cases with an impressive accuracy of
+							<b>91.6%</b>. Its straightforward architecture and robust performance
+							make it a valuable tool in healthcare applications, offering swift and
+							reliable classification for timely medical interventions.
+						</p>
+					</div>
+					<div style="text-align: center">
+						<img
+							src="../static/img/pr_cm.png"
+							class="border-5 fw-bold"
+							width="500"
+							alt="3"
+						/>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">Multi Layer Perceptron (MLP)</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							Our website leverages the MLPClassifier from sklearn, employing the
+							LBFGS solver and identity activation function for diabetes prediction.
+							With an accuracy of <b>92.9%</b>, the MLP model stands as a versatile
+							tool for complex classification tasks. Utilizing multiple layers and
+							neurons, MLP (Multi-Layer Perceptron) models excel at capturing
+							intricate patterns in data, enabling accurate differentiation between
+							diabetic and non-diabetic cases. By harnessing the power of advanced
+							optimization techniques and nonlinear activation functions, our
+							implementation ensures robust performance in diabetes classification,
+							contributing to enhanced healthcare decision-making and patient care.
+						</p>
+						<div style="text-align: center">
+							<img
+								src="../static/img/mlp_cm.png"
+								class="border-5 fw-bold"
+								width="500"
+								alt="3"
+							/>
+						</div>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">ADALINE Model</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							Our website introduces Adaline, a custom implementation. With an
+							accuracy of <b>83.97%</b>, Adaline offers a reliable solution for
+							distinguishing between diabetic and non-diabetic cases. Unlike
+							traditional classifiers, Adaline utilizes a continuous output range,
+							allowing for fine-grained predictions based on input features. By
+							iteratively adjusting weights to minimize errors, Adaline effectively
+							learns to classify diabetes cases with precision and efficiency. Its
+							handmade implementation showcases the flexibility and adaptability of
+							the Delta rule, contributing to accurate healthcare decisions and
+							personalized interventions for users.
+						</p>
+						<div style="text-align: center">
+							<img
+								src="../static/img/ad_cm.png"
+								class="border-5 fw-bold"
+								width="500"
+								alt="3"
+							/>
+						</div>
+					</div>
+				</div>
+				<h2 class="mt-5 mb-5 cards_header">Madaline Model</h2>
+				<div class="card container mt-5">
+					<div class="card-body border-5">
+						<p class="card-text">
+							Madaline, our custom implementation using TensorFlow's Keras model,
+							represents a cutting-edge approach to diabetes classification. With an
+							impressive accuracy of <b>91.02%</b>, Madaline stands as a robust tool
+							for healthcare practitioners and patients alike. Leveraging the
+							flexibility and power of deep learning, Madaline employs neural network
+							architecture to learn intricate patterns in diabetes data. Through
+							layers of interconnected neurons, Madaline adapts and optimizes its
+							parameters to accurately classify diabetic and non-diabetic cases. Its
+							utilization of TensorFlow's Keras framework ensures scalability and
+							efficiency, allowing for seamless integration into healthcare systems.
+							With Madaline, we aim to empower users with accurate and timely
+							predictions, facilitating proactive management of diabetes and improved
+							patient outcomes.
+						</p>
+						<div style="text-align: center">
+							<img
+								src="../static/img/madaline.png"
+								class="border-5 fw-bold"
+								width="500"
+								alt="3"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Form -->
+
+		<div id="form_style">
+			<h1 class="text-center pt-5 mt-5 mb-5" id="form_header">Diabetes classification</h1>
+			<form action="/predict" method="post">
+				<div class="container justify-content-center">
+					<div class="input-group">
+						<input
+							type="text"
+							aria-label=" feature 2"
+							class="form-control"
+							id="input_2"
+							placeholder="Glucose (Standard Rate 70-99 mg/dL)"
+							name="glucose"
+						/>
+						<span class="input-group-text">mg/dL</span>
+					</div>
+					<div class="row justify-content-center mt-5 mb-5">
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label="feature 1"
+								class="form-control"
+								id="input_1"
+								placeholder="Cholesterol (Standard Rate below 200 mg/dL)"
+								name="cholesterol"
+							/>
+							<span class="input-group-text">mg/dL</span>
+						</div>
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label=" feature 3"
+								class="form-control"
+								id="input_3"
+								placeholder="HDL Cholesterol (Standard Rate > 40-50 mg/dL)"
+								name="hdl_chol"
+							/>
+							<span class="input-group-text">mg/dL</span>
+						</div>
+					</div>
+
+					<div class="row justify-content-center mt-5 mb-5">
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label=" feature 4"
+								class="form-control"
+								id="input_4"
+								placeholder="Age"
+								name="age"
+							/>
+							<span class="input-group-text">years</span>
+						</div>
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label=" feature 5"
+								class="form-control"
+								id="input_5"
+								placeholder="Weight"
+								name="weight"
+							/>
+							<span class="input-group-text">kg</span>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-5 mb-5">
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label=" feature 6"
+								class="form-control"
+								id="input_6"
+								placeholder="Systolic Blood Pressure (Standard Rate below 120 mmHg)"
+								name="systolic_bp"
+							/>
+							<span class="input-group-text">mmHg</span>
+						</div>
+						<div class="col-5 input-group form_half">
+							<input
+								type="text"
+								aria-label=" feature 7"
+								class="form-control"
+								id="input_7"
+								placeholder="Diastolic Blood Pressure (Standard Rate below 80 mmHg)"
+								name="diastolic_bp"
+							/>
+							<span class="input-group-text">mmHg</span>
+						</div>
+					</div>
+					<div class="container-fluid justify-content-end text-end">
+						<button
+							class="btn mb-4 ms-4 submit_btn"
+							type="submit"
+							name="predict_button"
+							value="knn_predict"
+						>
+							Show Results
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+			integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+			integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

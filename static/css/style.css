@@ -1,0 +1,94 @@
+@font-face {
+	font-family: Raleway;
+	src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: ABeeZee;
+	src: url(../fonts/ABeeZee-Regular.ttf);
+}
+
+@layer base {
+	:root {
+		--text: #000004;
+		--background: #fbfef9;
+		--primary: #2e5eaa;
+		--secondary: #fb3640;
+	}
+}
+
+#main_body {
+	background-color: var(--background);
+	color: var(--text);
+}
+
+#nav_color {
+	background-color: var(--primary);
+	color: var(--background);
+	font-family: Raleway;
+}
+
+#title {
+	font-family: Raleway;
+}
+
+#risks_header {
+	color: var(--text);
+	font-family: Raleway;
+	text-shadow: 3px 1px 2px var(--secondary);
+}
+#main_header {
+	color: var(--text);
+	font-family: Raleway;
+}
+
+.par_all {
+	font-family: ABeeZee;
+}
+
+.cards_header {
+	color: var(--text);
+	font-family: Raleway;
+	text-shadow: -3px 1px 2px var(--secondary);
+}
+
+#form_header {
+	color: var(--background);
+	font-family: Raleway;
+	text-shadow: -3px 3px 5px var(--secondary);
+}
+
+#form_style {
+	color: var(--background);
+	background-color: var(--primary);
+	padding-top: 25px;
+}
+
+.submit_btn {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	color: var(--background);
+	font-family: ABeeZee;
+}
+
+.submit_btn:hover {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	color: var(--text);
+	font-family: ABeeZee;
+}
+.form_half {
+	width: 50%;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: var(--primary);
+	background-image: linear-gradient(
+		to right,
+		var(--background),
+		var(--primary),
+		var(--background)
+	);
+}
