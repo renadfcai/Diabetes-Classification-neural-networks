@@ -29,4 +29,3 @@ class Adaline:
         linear_output = np.dot(X, self.weights) + self.bias
         binary_output = np.where(linear_output >= 0, 1, 0)
         return binary_output
-# change
