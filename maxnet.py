@@ -41,3 +41,4 @@ class Maxnet:
             final_activations[:, 1] > 0, 1, 0
         )  # Assuming the second node represents the diabetic class (1)
         return predicted_labels
+# edit this code 
